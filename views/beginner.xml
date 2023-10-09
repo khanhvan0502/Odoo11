@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <template id="beginner_page" inherit_id="about_page" primary="True">
+            <xpath expr="//div" position="replace">
+                <div>
+                    <h1>Beginner</h1>
+                    <p>Xin chào! Đây là trang Beginner của MyWeb.</p>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

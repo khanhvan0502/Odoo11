@@ -1,0 +1,42 @@
+<odoo>
+    <!-- <template id="header" inherit_id="website.layout" name="Header Shop My Cart Link">
+        <xpath expr="//header//ul[@id='top_menu']/li" position="before">
+            <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+            <li id="my_cart" t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">
+                <a href="/shop/cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    My Cart <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />
+                </a>
+            </li>
+        </xpath>
+    </template> -->
+    <data>
+        <template id="layout">
+            <xpath expr="//header//a[hasclass('navbar-brand')]" position="inside">
+                <a class="navbar-brand" href="/" t-if="website" t-field="website.name">My Website</a>
+            </xpath>
+            <xpath expr="//ul[@id='top_menu']" position="inside">
+                <li class="nav-item">
+                    <a class="nav-link" href="/myweb/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/myweb/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/myweb/contact">Contact</a>
+                </li>
+            </xpath>
+            <div class="content">
+                <div class="header text-center">
+                    <h3>Header1</h3>
+                    <div class="container">
+                    </div>
+                </div>
+
+                <div class="header">
+                    <h3>Footer</h3>
+                </div>
+            </div>
+        </template> 
+    </data>
+</odoo>

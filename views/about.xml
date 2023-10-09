@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <template id="about_page" inherit_id="layout" primary="True">
+            <xpath expr="//div[@class='container']" position="replace">
+                <div class='container'>
+                    <h1>About</h1>
+                    <p>Xin chào! Đây là trang About của MyWeb.</p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/myweb/about/beginner">Beginner</a>
+                    </li>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

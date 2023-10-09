@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <template id="home_page" inherit_id="layout" primary="True">
+            <xpath expr="//div[@class='container']" position="replace">
+                <div class='container'>
+                    <h1>Home</h1>
+                    <p>Xin chào! Đây là trang Home của MyWeb.</p>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
